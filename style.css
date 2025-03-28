@@ -27,14 +27,8 @@ nav {
 }
 
 nav .logo {
-    font-size: 26px;
+    font-size: 24px;
     font-weight: bold;
-    color: white;
-    text-transform: uppercase;
-    background-image: linear-gradient(90deg, #ff7f00, #28a745); /* Gradiente vibrante */
-    -webkit-background-clip: text;
-    background-clip: text;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Sombra mais suave para um efeito 3D */
 }
 
 .menu {
@@ -52,7 +46,6 @@ nav .logo {
     background-color: white;
 }
 
-/* Links de navegação */
 .nav-links {
     display: flex;
     list-style-type: none;
@@ -66,79 +59,55 @@ nav .logo {
     text-decoration: none;
     color: white;
     font-size: 18px;
-    font-weight: bold;
-    text-transform: uppercase;
-    transition: all 0.3s ease;
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3); /* Sombra suave para destaque */
-}
-
-.nav-links a:hover {
-    color: #ff7f00; /* Destacar o hover */
-    text-shadow: 3px 3px 8px rgba(255, 255, 255, 0.7);
 }
 
 /* Sobre */
 #sobre {
-    padding: 80px 20px;
+    padding: 50px 20px;
     background-size: 100% 100%;
     background-position: center;
     background-repeat: no-repeat;
-    animation: catraca 45s linear infinite;
+    animation: catraca 45s linear infinite; /* Nova animação com 15 imagens */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    text-align: center;
 }
 
-@keyframes catraca { 0% { background-image: url('img/WhatsApp\ Image\ 2025-03-27\ at\ 19.32.49.jpeg'); } 6.67% { background-image: url('img/WhatsApp\ Image\ 2025-03-27\ at\ 19.32.45.jpeg'); } 13.33% { background-image: url('img/pizza\ 2.jpeg'); } 20% { background-image: url('img/pizza5.jpeg'); } 26.67% { background-image: url('img/trem.jpeg'); } 33.33% { background-image: url('img/triplohamb.jpeg'); } 40% { background-image: url('img/treshamb.jpeg'); } 46.67% { background-image: url('img/hamb.jpeg'); } 53.33% { background-image: url('img/parmegiana.jpeg'); } 60% { background-image: url('img/cervejas.jpeg'); } 66.67% { background-image: url('img/fritas-camarao.jpeg'); } 73.33% { background-image: url('img/fritas1.jpeg'); } 80% { background-image: url('img/rodizio2.jpeg'); } 86.67% { background-image: url('img/rodizio4.jpeg'); } 93.33% { background-image: url('img/rodizio2.jpeg'); } 100% { background-image: url('img/pizza5.jpeg'); } }
+@keyframes catraca {
+    0% { background-image: url('img/WhatsApp\ Image\ 2025-03-27\ at\ 19.32.49.jpeg'); }
+    6.67% { background-image: url('img/WhatsApp\ Image\ 2025-03-27\ at\ 19.32.45.jpeg'); }
+    13.33% { background-image: url('img/pizza\ 2.jpeg'); }
+    20% { background-image: url('img/pizza5.jpeg'); }
+    26.67% { background-image: url('img/trem.jpeg'); }
+    33.33% { background-image: url('img/triplohamb.jpeg'); }
+    40% { background-image: url('img/treshamb.jpeg'); }
+    46.67% { background-image: url('img/hamb.jpeg'); }
+    53.33% { background-image: url('img/parmegiana.jpeg'); }
+    60% { background-image: url('img/cervejas.jpeg'); }
+    66.67% { background-image: url('img/fritas-camarao.jpeg'); }
+    73.33% { background-image: url('img/fritas1.jpeg'); }
+    80% { background-image: url('img/rodizio2.jpeg'); }
+    86.67% { background-image: url('img/rodizio4.jpeg'); }
+    93.33% { background-image: url('img/rodizio2.jpeg'); }
+    100% { background-image: url('img/pizza5.jpeg'); }
+}
 
 .sobre-content {
-    max-width: 900px;
-    margin: 0 auto;
+    text-align: center;
     color: #28a745; /* verde */
-    text-align: center; /* Garantir que o texto ficará centralizado */
-}
-
-.sobre-content h1,
-.sobre-content h2,
-.sobre-content h3,
-.sobre-content p {
-    color: #28a745; /* verde */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2); /* Sombra suave para destacar o texto */
 }
 
 .sobre-content h1 {
-    font-size: 4rem;
-    margin-bottom: 20px;
-    letter-spacing: 1px;
-    animation: textFadeIn 1.5s ease-out;
-}
-
-.sobre-content h2 {
     font-size: 3rem;
-    margin-bottom: 15px;
-}
-
-.sobre-content h3 {
-    font-size: 2.5rem;
     margin-bottom: 10px;
+    color: #28a745; /* verde */
 }
 
 .sobre-content p {
     font-size: 1.5rem;
     margin-bottom: 20px;
-}
-
-@keyframes textFadeIn {
-    0% {
-        opacity: 0;
-        transform: translateY(10px);
-    }
-    100% {
-        opacity: 1;
-        transform: translateY(0);
-    }
+    color: #28a745; /* verde */
 }
 
 .video-container {
@@ -153,8 +122,7 @@ nav .logo {
 
 .localizacao {
     margin-top: 30px;
-    font-size: 1.4rem;
-    color: #28a745; /* verde */
+    font-size: 1.2rem;
 }
 
 .localizacao ul {
@@ -190,6 +158,12 @@ nav .logo {
     #menu-toggle.active + .nav-links {
         display: flex;
     }
+}
+
+/* Rodízio e Cardápio */
+#rodizio, #cardapio {
+    padding: 50px 20px;
+    text-align: center;
 }
 
 footer {
