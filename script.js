@@ -1,5 +1,7 @@
-$(document).ready(function() {
-    $('#menu-btn').click(function() {
-        $('#menu').toggleClass('open');
-    });
+// Menu hambúrguer
+const menuToggle = document.getElementById("menu-toggle");
+const navLinks = document.getElementById("nav-links");
+
+menuToggle.addEventListener("click", () => {
+    navLinks.classList.toggle("active");
 });

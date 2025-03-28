@@ -1,0 +1,174 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Corpo e fundo */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+}
+
+/* Header e Navbar */
+header {
+    background-color: #28a745; /* verde */
+    color: white;
+    padding: 10px 0;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+}
+
+nav .logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.menu {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-around;
+    width: 30px;
+    height: 25px;
+}
+
+.menu-bar {
+    height: 4px;
+    width: 100%;
+    background-color: white;
+}
+
+.nav-links {
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+}
+
+/* Sobre */
+#sobre {
+    padding: 50px 20px;
+    background-size: 100% 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation: catraca 45s linear infinite; /* Nova animação com 15 imagens */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+@keyframes catraca {
+    0% { background-image: url('img/WhatsApp\ Image\ 2025-03-27\ at\ 19.32.49.jpeg'); }
+    6.67% { background-image: url('img/WhatsApp\ Image\ 2025-03-27\ at\ 19.32.45.jpeg'); }
+    13.33% { background-image: url('img/pizza\ 2.jpeg'); }
+    20% { background-image: url('img/pizza5.jpeg'); }
+    26.67% { background-image: url('img/trem.jpeg'); }
+    33.33% { background-image: url('img/triplohamb.jpeg'); }
+    40% { background-image: url('img/treshamb.jpeg'); }
+    46.67% { background-image: url('img/hamb.jpeg'); }
+    53.33% { background-image: url('img/parmegiana.jpeg'); }
+    60% { background-image: url('img/cervejas.jpeg'); }
+    66.67% { background-image: url('img/fritas-camarao.jpeg'); }
+    73.33% { background-image: url('img/fritas1.jpeg'); }
+    80% { background-image: url('img/rodizio2.jpeg'); }
+    86.67% { background-image: url('img/rodizio4.jpeg'); }
+    93.33% { background-image: url('img/rodizio2.jpeg'); }
+    100% { background-image: url('img/pizza5.jpeg'); }
+}
+
+.sobre-content {
+    text-align: center;
+    color: #28a745; /* verde */
+}
+
+.sobre-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+    color: #28a745; /* verde */
+}
+
+.sobre-content p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #28a745; /* verde */
+}
+
+.video-container {
+    max-width: 100%;
+    margin: 20px auto;
+}
+
+.video-container video {
+    width: 80%;
+    max-width: 600px;
+}
+
+.localizacao {
+    margin-top: 30px;
+    font-size: 1.2rem;
+}
+
+.localizacao ul {
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #28a745; /* verde */
+        position: absolute;
+        top: 60px;
+        left: 0;
+        right: 0;
+    }
+
+    .nav-links li {
+        text-align: center;
+        margin: 15px 0;
+    }
+
+    .nav-links a {
+        font-size: 20px;
+    }
+
+    .menu {
+        display: flex;
+    }
+
+    #menu-toggle.active + .nav-links {
+        display: flex;
+    }
+}
+
+/* Rodízio e Cardápio */
+#rodizio, #cardapio {
+    padding: 50px 20px;
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #28a745; /* verde */
+    color: white;
+}
