@@ -5,50 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Pizzaria Torre de Pisa</title>
     <link rel="stylesheet" href="style.css">
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Hepta+Slab:400,700|Lato:400,700&display=swap" rel="stylesheet">
 </head>
 <body>
+
+    <!-- Navbar -->
     <header>
+        <div class="logo">Pizzaria Torre de Pisa</div>
         <nav>
-            <div class="logo">Pizzaria Torre de Pisa</div>
-            <div class="menu" id="menu-toggle">
-                <div class="menu-bar"></div>
-                <div class="menu-bar"></div>
-                <div class="menu-bar"></div>
-            </div>
-            <ul class="nav-links" id="nav-links">
-                <li><a href="#sobre">Sobre</a></li>
-                <li><a href="#cardapio">Cardápio</a></li>
-                <li><a href="#rodizio">Rodízio</a></li>
+            <ul class="nav-links">
+                <li><a href="#">Home</a></li>
+                <li><a href="cardapio/cardapio.html">Cardápio</a></li>
             </ul>
+            <div class="menu-toggle" id="menu-toggle">
+                <i class="fas fa-bars"></i>
+            </div>
         </nav>
     </header>
 
-    <section id="sobre">
-        <div class="sobre-content">
-            <h1>Pizzaria Torre de Pisa</h1>
-            <p>A Primeira Você Nunca Esquece!</p>
-            <div class="video-container">
-                <video controls>
-                    <source src="img/index.mp4" type="video/mp4">
-                    Seu navegador não suporta o vídeo.
-                </video>
-            </div>
-            <div class="localizacao">
-                <h2>Localização</h2>
-                <p>Rua: Urbano Guedes, 480, Sapé, Paraiba</p>
-                <h3>Horário de Funcionamento:</h3>
-                <ul>
-                    <li>Segunda a Sexta: 11:00 - 23:00</li>
-                    <li>Sábado: 12:00 - 24:00</li>
-                    <li>Domingo: Fechado</li>
-                </ul>
-            </div>
+    <!-- Redes Sociais -->
+    <div class="social-icons">
+        <div class="whatsapp" onclick="toggleWhatsapp()">
+            <i class="fab fa-whatsapp"></i>
         </div>
-    </section>
+        <div class="instagram">
+            <a href="https://www.instagram.com/pizzariatorredepisa/#" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+        </div>
+    </div>
 
-    <footer>
-        <p>&copy; 2025 Pizzaria Torre de Pisa</p>
-    </footer>
+    <!-- Popup WhatsApp -->
+    <div class="whatsapp-popup" id="whatsapp-popup">
+        <p>Fale Conosco no WhatsApp:<br><strong>(83) 9 9420-4755</strong></p>
+        <button onclick="toggleWhatsapp()">Fechar</button>
+    </div>
+
+    <!-- Título -->
+    <h2 class="titulo">Conheça Algumas Opções Nossa!</h2>
+
+    <!-- Carrossel -->
+    <div class="carousel">
+        <div class="carousel-track">
+            <img src="img/pizza5.jpeg" alt="">
+            <img src="img/pizza 2.jpeg" alt="">
+            <img src="img/pizza 1.jpeg" alt="">
+            <img src="img/trem.jpeg" alt="">
+            <img src="img/rodizio2.jpeg" alt="">
+            <img src="img/rodizio4.jpeg" alt="">
+            <img src="img/hamb.jpeg" alt="">
+            <img src="img/hamb2.jpeg" alt="">
+            <img src="img/treshamb.jpeg" alt="">
+            <img src="img/triplohamb.jpeg" alt="">
+            <img src="img/fritas1.jpeg" alt="">
+            <img src="img/fritas-camarao.jpeg" alt="">
+        </div>
+    </div>
+
+    <!-- Rodapé -->
+  <footer>
+    <p>📍 Rua Urbano Guedes, 480 - Centro, Sapé-PB</p>
+    <p>🕑 Atendimento: Domingo a Domingo - 17h às 23:30h</p>
+  </footer>
 
     <script src="script.js"></script>
 </body>
